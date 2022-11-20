@@ -1,6 +1,11 @@
 public class IntsCalculator extends Calculator implements Ints {
 
-    private Calculator calculator;
+    private final Calculator calculator;
+
+    IntsCalculator(){
+        this.calculator = new Calculator();
+    }
+
 
     @Override
     public int sum(int arg0, int arg1) {
